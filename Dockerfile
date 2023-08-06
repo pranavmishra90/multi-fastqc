@@ -18,4 +18,4 @@ RUN cd /usr/local && \
     mv s-andrews-FastQC-f61eee7 fastqc && \
     sed -i 's/Xmx250m/Xmx2048m/' fastqc/fastqc && \
     chmod 755 fastqc/fastqc
-ENV PATH /usr/local/fastqc/FastQC/:$PATH
+ENV PATH /usr/local/fastqc/:$PATH
